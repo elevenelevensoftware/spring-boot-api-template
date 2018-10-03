@@ -1,6 +1,6 @@
 package com.example.apitestv4.service.implementation;
 
-import com.example.apitestv4.model.TwitSearchResult;
+import com.example.apitestv4.model.SearchResult;
 import com.example.apitestv4.repository.SearchServiceRepository;
 import com.example.apitestv4.service.SearchService;
 
@@ -21,7 +21,7 @@ public class SearchServiceImplementation implements SearchService {
     }
 
     @Override
-    public List<TwitSearchResult> getSearchResultsFor(String searchTerm) {
+    public List<SearchResult> getSearchResultsFor(String searchTerm) {
         return searchServiceRepository.getSearchResultsFor(searchTerm);
     }
 

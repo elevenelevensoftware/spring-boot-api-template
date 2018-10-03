@@ -1,12 +1,12 @@
 package com.example.apitestv4.service;
 
-import com.example.apitestv4.model.TwitSearchResult;
+import com.example.apitestv4.model.SearchResult;
 
 import java.util.List;
 
 public interface SearchService {
 
-    List<TwitSearchResult> getSearchResultsFor(String searchTerm);
+    List<SearchResult> getSearchResultsFor(String searchTerm);
 
     void storeScheduledSearchResults(String searchTerm);
 }

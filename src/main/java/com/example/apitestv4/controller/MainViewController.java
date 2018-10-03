@@ -1,6 +1,6 @@
 package com.example.apitestv4.controller;
 
-import com.example.apitestv4.model.TwitSearchResult;
+import com.example.apitestv4.model.SearchResult;
 import com.example.apitestv4.service.SearchService;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,7 +26,7 @@ public class MainViewController {
     public void getApiResult() {}
 
     @GetMapping("/search-for/{searchTerm}")
-    public List<TwitSearchResult> getResultsFor(@PathVariable("searchTerm") String searchTerm) {
+    public List<SearchResult> getResultsFor(@PathVariable("searchTerm") String searchTerm) {
         return searchService.getSearchResultsFor(searchTerm);
     }
 }

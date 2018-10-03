@@ -5,6 +5,6 @@ import lombok.Getter;
 
 @AllArgsConstructor
 @Getter
-public class TwitSearchResult {
+public class SearchResult {
     private String content;
 }
